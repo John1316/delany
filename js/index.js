@@ -25,11 +25,21 @@ $("#btnUp").click(function(){
     $("body,html").animate({scrollTop:0},1000) 
 }) //button up
 
+/* Start loading screen*/
 $(document).ready(function () {
 	$("#loading").fadeOut(2000, function () {
 		$("body").css("overflow", "auto");
 	});
 });
+/* End loading screen*/
+
+
+/* Start Filter section*/
+$("#filter").hide();
+$("#filterToggle").click(function () {
+	$("#filter").slideToggle(1500);
+});
+/* End Filter section*/
 
 jQuery(function ($) {
 	("use strict");
