@@ -630,6 +630,10 @@ header a.logo img {
   color: #fff;
 }
 
+.about .lower-about .card:hover p {
+  color: #fff;
+}
+
 .contact-us .form-control {
   border-bottom: 1px solid #3c90f7;
   border-top: none;
@@ -777,6 +781,18 @@ header a.logo img {
 @media screen and (max-width: 1000px) {
   .login-main .login-page .card .border-left {
     border-left: none !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lost-home .filter {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .lost-home .filter {
+    left: 27.8%;
   }
 }
 /*# sourceMappingURL=style.css.map */

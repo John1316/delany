@@ -724,6 +724,9 @@ header a.logo img {
         .card:hover h5{
             color: #fff;
         }
+        .card:hover p{
+            color: #fff;
+        }
     }
 
 }
@@ -863,13 +866,13 @@ header a.logo img {
         left: 100px;
     }
 }
- @media screen and (max-width:800px){
+@media screen and (max-width:800px){
         
         .lost-details .col-lg-8 img{
             width:100%;
         }
     }
- @media screen and (max-width:1000px){
+@media screen and (max-width:1000px){
         
         .login-main{
             .login-page{
@@ -880,4 +883,14 @@ header a.logo img {
                 }
             }
         }
+}
+@media screen and (min-width:1200px){
+    .lost-home .filter{
+        width: 25%;
+    }
+}
+@media screen and (max-width:1200px){
+    .lost-home .filter{
+        left: 27.8%;
+    }
 }
