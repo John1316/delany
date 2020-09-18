@@ -731,6 +731,7 @@ header a.logo img {
 }
 
 .login-main {
+  background: linear-gradient(45deg, #3c90f7, #414756, #00297B);
   display: -ms-flexbox;
   height: 100vh;
   -ms-flex-pack: center;
