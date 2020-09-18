@@ -8,7 +8,7 @@ $maincolor:#3c90f7;
     box-sizing: border-box;
 }
 body{
-    font-family: "Lato", sans-serif;
+    font-family: 'Amiri', serif;
     font-weight: 400;
     font-size: 16px;
 
@@ -798,8 +798,8 @@ header a.logo img {
             transform: rotate(1800deg);
         }
     }
-    .lost-home{
-        .modal{
+.lost-home{
+    .modal{
         z-index: 10500000000;
         &
             .btn-close{
@@ -807,17 +807,17 @@ header a.logo img {
                 background-color: transparent;
                 font-size: 25px;
             }
-        }
-        .upper-lost-page{
-            margin-top: 5rem;
-        }
-        .card i{
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            cursor: pointer;
-        }
     }
+    .upper-lost-page{
+        margin-top: 5rem;
+    }
+    .card i{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+    }
+}
     .nav-pages2{
         .btn-white{
             color:$maincolor;
