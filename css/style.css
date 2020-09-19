@@ -739,11 +739,14 @@ header a.logo img {
   cursor: pointer;
 }
 
-.lost-home .card i {
+.lost-home .lower-lost-page .card-body {
+  position: relative;
+}
+
+.lost-home .lower-lost-page .btn {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
+  bottom: 127px;
+  left: 45%;
 }
 
 .nav-pages2 .btn-white {
@@ -792,6 +795,8 @@ header a.logo img {
 
 @media screen and (max-width: 1200px) {
   .lost-home .filter {
+    width: 69%;
+    top: 167px;
     left: 27.8%;
   }
 }
