@@ -743,10 +743,10 @@ header a.logo img {
   position: relative;
 }
 
-.lost-home .lower-lost-page .btn {
+.lost-home .lower-lost-page .btns-details {
   position: absolute;
   bottom: 127px;
-  left: 45%;
+  left: 37%;
 }
 
 .nav-pages2 .btn-white {
