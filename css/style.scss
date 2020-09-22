@@ -56,6 +56,7 @@ body{
     z-index: 7894654132;
     display: none;
     cursor: pointer;
+    transition: all 1s;
     
 }
 #btnUp:hover{
@@ -63,28 +64,42 @@ body{
     color: #fff;
     
 }
+#rate{
+    position: fixed;
+    bottom:30px;
+    left: 30px;
+    z-index: 7894654132;
+    cursor: pointer;
+    transition: all 1s;
+    &
+    i{
+        color: $maincolor;
+    }
+}
+
+#rate:hover{
+    background-color: $maincolor;
+    &
+    i{
+        color: #fff;
+    }
+}
+#options{
+    position: fixed;
+    bottom:100px;
+    left:30px; 
+    z-index: 99999999999999999;
+}
+
+#rate-options{
+    background-color:#fff;
+    border: solid 3px $maincolor;
+    padding: 30px;
+}
+
 // end generals
 
-// #nav{
-//     position: fixed;
-//     top: 0;
-//     bottom: 0;
-//     right: 0;
-//     left: 0;
-//     background-color: #09c;
-//     z-index: 9999999999999999999999999;
-//     &
-//     .btn{
-//         position: absolute;
-//         top: 50px;
-//         right: 50px;
-//     }
-//     .btn-light{
-//         color: #fff;
-//         background-color: transparent;
-//         border: none;
-//     }
-// }
+
 /* ===================================
         Header
    ====================================== */
@@ -901,5 +916,11 @@ header a.logo img {
         width: 69%;
         top: 167px;
         left: 27.8%;
+    }
+}
+@media screen and (max-width:500px)
+{
+    #options{
+        width: 75%;
     }
 }

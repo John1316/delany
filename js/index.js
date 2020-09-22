@@ -33,6 +33,14 @@ $(document).ready(function () {
 });
 /* End loading screen*/
 
+/* Start rate option*/
+
+$("#rate").click(function () {
+	$("#rate-options").slideToggle(1500);
+});
+$("#rate-options").hide();
+/* End rate option*/
+
 
 /* Start Filter section*/
 $("#filter").hide();

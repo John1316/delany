@@ -21,10 +21,34 @@
         <!-- Start Genrals -->
 
     <!-- Start button up -->
-        <div id="btnUp" class="btn rounded-circle btn-layout-main">
+        <button id="btnUp" class="btn rounded-circle btn-layout-main">
             <i class="fas fa-1x fa-hand-point-up"></i>
-        </div>
+        </button>
     <!-- End button up -->
+
+    <!-- Start rate -->
+        <button id="rate" class="btn rounded-circle btn-layout-main">
+            <i class="fas fa-star"></i>
+        </button>
+        <div id="options">
+            <div id="rate-options">
+                <h2 class="main-clr">قييمنا</h2>
+                <form action="" method="post">
+                    <div class="form-group my-3">
+                        <select class="form-control" name="rate" id="exampleFormControlSelect1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <input type="text" name="" placeholder="تقيمك" class="form-control my-4"> 
+                    <button class="btn btn-main">ارسل تقييمك</button>
+                </form>    
+            </div> 
+        </div>     
+    <!-- End rate -->
 
     <!-- Loading screen -->
         <div id="loading">
