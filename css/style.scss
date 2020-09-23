@@ -882,7 +882,53 @@ header a.logo img {
             }
         }
     }
+.messages{
+    .messages-scroll-container{
+        max-height: 465px;
+        margin-bottom: 15px;
+        overflow-y: scroll;
+        &
+        .admin{
+            .card{
+                background-color: $head;
+                &
+                ::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 65px;
+                    left: -15px;
+                    transform: rotate(269deg);
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid $head;
+                }
+            }
+        }
+        .user{
+            .card{
+                background-color: $maincolor;
+                &
+                ::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 65px;
+                    left: -21px;
+                    transform: rotate(90deg);
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid $maincolor;
+                }
+            }
+        }
     
+    }
+}
 @media screen and (min-width:1020px){
     .sidemenu_btn{
         left: 100px;

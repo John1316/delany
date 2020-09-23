@@ -804,6 +804,48 @@ header a.logo img {
   border-left: 1px solid #3c90f7 !important;
 }
 
+.messages .messages-scroll-container {
+  max-height: 465px;
+  margin-bottom: 15px;
+  overflow-y: scroll;
+}
+
+.messages .messages-scroll-container .admin .card {
+  background-color: #002374;
+}
+
+.messages .messages-scroll-container .admin .card ::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 65px;
+  left: -15px;
+  transform: rotate(269deg);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #002374;
+}
+
+.messages .messages-scroll-container .user .card {
+  background-color: #3c90f7;
+}
+
+.messages .messages-scroll-container .user .card ::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 65px;
+  left: -21px;
+  transform: rotate(90deg);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #3c90f7;
+}
+
 @media screen and (min-width: 1020px) {
   .sidemenu_btn {
     left: 100px;
