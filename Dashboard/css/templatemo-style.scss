@@ -10,6 +10,7 @@ body {
     text-align: right;
     overflow-x: hidden;
 }
+
 .main-login{
   height: 90vh;
 }
@@ -199,6 +200,9 @@ button:focus {
 .tm-text-color-secondary {
   color: #bdcbd8;
 }
+.text-color-primary {
+  color: $maincolor;
+}
 .tm-small {
   font-size: 90%;
 }
@@ -320,12 +324,7 @@ thead {
 .form-group {
   margin-bottom: 15px;
 }
-.btn {
-  border-radius: 0;
-  padding: 13px 28px;
-  transition: all 0.2s ease;
-  max-width: 100%;
-}
+
 .btn-small {
   padding: 10px 24px;
 }
@@ -577,7 +576,48 @@ input[type="checkbox"]:focus {
 .tm-footer-link:focus {
   color: #aacbea;
 }
-
+.message{
+  .tm-bg-primary-dark{
+    background-color: #fff;
+  }
+        .admin{
+          .card{
+            background-color: $tableHead;
+          }
+          .card::after{
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 65px;
+          left: -15px;
+          transform: rotate(269deg);
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid $tableHead;
+          }
+        }
+        .user{
+          .card{
+            background-color: $maincolor;
+          }
+          .card::after{
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 65px;
+          left: -20px;
+          transform: rotate(90deg);
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid $maincolor;
+          }
+        }
+        
+    }
 @media (min-width: 1200px) {
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-left: 28px;

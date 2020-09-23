@@ -244,6 +244,10 @@ button:focus {
   color: #bdcbd8;
 }
 
+.text-color-primary {
+  color: #3C90F7;
+}
+
 .tm-small {
   font-size: 90%;
 }
@@ -385,13 +389,6 @@ thead {
 
 .form-group {
   margin-bottom: 15px;
-}
-
-.btn {
-  border-radius: 0;
-  padding: 13px 28px;
-  transition: all 0.2s ease;
-  max-width: 100%;
 }
 
 .btn-small {
@@ -685,6 +682,46 @@ input[type="checkbox"]:focus {
 .tm-footer-link:hover,
 .tm-footer-link:focus {
   color: #aacbea;
+}
+
+.message .tm-bg-primary-dark {
+  background-color: #fff;
+}
+
+.message .admin .card {
+  background-color: #002374;
+}
+
+.message .admin .card::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 65px;
+  left: -15px;
+  transform: rotate(269deg);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #002374;
+}
+
+.message .user .card {
+  background-color: #3C90F7;
+}
+
+.message .user .card::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 65px;
+  left: -20px;
+  transform: rotate(90deg);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #3C90F7;
 }
 
 @media (min-width: 1200px) {
